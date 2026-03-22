@@ -1,0 +1,138 @@
+:root {
+	--lavender-mist: #f4effa;
+	--dark-amethyst: #2f184b;
+	--indigo-velvet: #532b88;
+	--lavender-purple: #9b72cf;
+	--wisteria: #c8b1e4;
+
+	/* CSS HEX */
+	--eggshell: #f4f1deff;
+	--burnt-peach: #e07a5fff;
+	--twilight-indigo: #3d405bff;
+	--muted-teal: #81b29aff;
+	--apricot-cream: #f2cc8fff;
+
+	--portfolio-bg: var(--eggshell);
+	--portfolio-bg-secondary: var(--burnt-peach);
+
+	--portfolio-surface: var(--apricot-cream);
+	--portfolio-text: var(--twilight-indigo);
+	--portfolio-accent: var(--muted-teal);
+	--portfolio-accent-soft: var(--apricot-cream);
+	--portfolio-highlight: var(--muted-teal);
+}
+
+
+.bg-portfolio-base{
+	background-color: var(--portfolio-bg);
+}
+.bg-portfolio-base-secondary{
+	background-color: var(--portfolio-bg-secondary);
+}
+
+.img-profile {
+	display: block;
+	width: 100%;
+	aspect-ratio: 1 / 1;
+	object-fit: cover;
+	object-position: center top;
+	border-radius: 50%;
+}
+
+.brut-shadow {
+	box-shadow: 0.2rem 0.2rem 0px #000;
+}
+
+#engineering-tabs .nav-link,
+.section-cta .btn {
+	border: 4px solid #000;
+	border-radius: 0;
+	box-shadow: 0.2rem 0.2rem 0px #000;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: none;
+}
+
+#engineering-tabs .nav-link {
+	background-color: var(--portfolio-bg);
+	color: var(--portfolio-text);
+}
+
+#engineering-tabs .nav-link:hover,
+#engineering-tabs .nav-link:focus-visible,
+.section-cta .btn:hover,
+.section-cta .btn:focus-visible {
+	transform: translate(0.1rem, 0.1rem);
+	box-shadow: 0.1rem 0.1rem 0px #000;
+}
+
+#engineering-tabs .nav-link.active,
+#engineering-tabs .nav-link.show {
+	background-color: var(--muted-teal);
+	color: #000;
+}
+
+.section-cta .btn {
+	background-color: var(--portfolio-bg);
+	color: var(--portfolio-text);
+}
+
+.section-cta {
+	height: 10rem;
+}
+
+.section-cta-img {
+	object-fit: cover;
+	object-position: center center;
+}
+
+#engineering-tabContent .card {
+	height: auto;
+}
+
+#musicCarousel .carousel-indicators [data-bs-target] {
+	width: 14px;
+	height: 14px;
+	border: 3px solid #000;
+	border-radius: 0;
+	background-color: var(--portfolio-bg);
+	opacity: 1;
+}
+
+#musicCarousel .carousel-indicators .active {
+	background-color: var(--muted-teal);
+}
+
+@media (max-width: 991.98px) {
+	#engineering, #music {
+		min-height: 60svh;
+	}
+}
+
+@media (min-width: 992px) {
+	.section-cta {
+		height: 100%;
+		min-height: 16rem;
+	}
+
+	.section-cta-img {
+		object-position: center;
+
+	}
+
+	#engineering-tabContent > .tab-pane {
+		display: flex !important;
+		opacity: 1;
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+
+	#engineering-tabContent > .tab-pane > .card {
+		width: 100%;
+		height: 100%;
+	}
+
+	#music-cards-grid > [class*="col-"] > .card {
+		height: 100%;
+	}
+}

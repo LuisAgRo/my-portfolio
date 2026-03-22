@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Luis G.L. | Portfolio</title>
+	<link rel="icon" type="image/x-icon" href="../images/journal-check.svg">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<script defer src="../js/bootstrap.bundle.js"></script>
+</head>
+
+<body class="bg-portfolio-base-secondary">
+	<header class="mx-1">
+		<nav
+			class="bg-portfolio-base mt-3 container navbar navbar-expand-md navbar-light border border-black border-4 rounded-4 brut-shadow mb-3 mt">
+			<div class="container-fluid px-2 px-lg-3">
+				<a class="navbar-brand" href="home.html">
+					<i class="bi bi-bookmark-star-fill me-2"></i>PORTFOLIO
+				</a>
+				<button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+					aria-controls="mainNav" aria-expanded="false" aria-label="Alternar navegación">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-end" id="mainNav">
+					<ul class="navbar-nav">
+						<li class="nav-item"><a class="nav-link" href="#">INICIO</a></li>
+						<li class="nav-item"><a class="nav-link" href="#engineering">INGENIERO</a></li>
+						<li class="nav-item"><a class="nav-link" href="#music">MÚSICO</a></li>
+						<li class="nav-item"><a class="nav-link" href="#about">CONTACTO</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="bg-portfolio-base container border border-black border-4 rounded-0 brut-shadow mb-3 gx-0 ">
+
+			<div class="row align-items-stretch my-1 mx-0 position-relative">
+				<div
+					class="col-12 col-lg-6 order-1 order-lg-2 h-100 d-flex flex-column justify-content-center align-items-center">
+					<figure class="col-8  col-lg-6">
+						<img class="img-profile  border border-black border-4 brut-shadow "
+							src="../images/profile-viola.jpeg" alt="Luis sujetando una viola">
+					</figure>
+					<h1 class="display-4">Luis García Liñán</h1>
+					<h2 class="display-5">Ingeniero y M&uacute;sico</h2>
+				</div>
+				<div class="col-12 col-lg-3 order-2 order-lg-1 my-1">
+					<a href="#engineering" class="text-decoration-none d-block h-100">
+						<article class="card section-cta overflow-hidden border border-4 border-black rounded-4">
+							<img class="card-img section-cta-img h-100" src="../images/computer-retro.jpg"
+								alt="Computadora retro">
+							<div class="card-img-overlay d-flex align-items-center justify-content-center p-0">
+								<span class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25"></span>
+								<span class="btn btn-light fw-bold position-relative">Saber m&aacute;s</span>
+							</div>
+						</article>
+					</a>
+				</div>
+				<div class="col-12 col-lg-3 order-3 order-lg-3 my-1">
+					<a href="#music" class="text-decoration-none d-block h-100">
+						<article class="card section-cta overflow-hidden border border-4 border-black rounded-4">
+							<img class="card-img section-cta-img h-100" src="../images/violin-stacked.jpg"
+								alt="Violines ordenados">
+							<div class="card-img-overlay d-flex align-items-center justify-content-center p-0">
+								<span class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25"></span>
+								<span class="btn btn-light fw-bold position-relative">Saber m&aacute;s</span>
+							</div>
+						</article>
+					</a>
+				</div>
+			</div>
+			<div class="row" id="rrss">
+				<div class="col-12 visually-hidden">TODO: redes sociales</div>
+			</div>
+		</div>
+	</header>
+
+
+	<main class="mx-1 mb-4">
+		<section id="engineering"
+			class="container border border-black border-4 rounded-0 brut-shadow mb-3 p-3 bg-portfolio-base">
+			<div class="row align-items-center">
+				<div class="col-2">
+
+				</div>
+				<h2 class="col-12 display-5"><i class="bi bi-terminal-fill fs-1"></i> Ingeniero Informático</h2>
+			</div>
+
+			<ul class="nav nav-pills gap-2 mt-3 mb-3 d-lg-none" id="engineering-tabs" role="tablist">
+				<li class="nav-item" role="presentation">
+					<button class="nav-link active" id="tab-estudios" data-bs-toggle="pill"
+						data-bs-target="#pane-estudios" type="button" role="tab" aria-controls="pane-estudios"
+						aria-selected="true">Estudios</button>
+				</li>
+				<li class="nav-item" role="presentation">
+					<button class="nav-link" id="tab-proyectos" data-bs-toggle="pill" data-bs-target="#pane-proyectos"
+						type="button" role="tab" aria-controls="pane-proyectos" aria-selected="false">Proyectos</button>
+				</li>
+				<li class="nav-item" role="presentation">
+					<button class="nav-link" id="tab-tecnologias" data-bs-toggle="pill"
+						data-bs-target="#pane-tecnologias" type="button" role="tab" aria-controls="pane-tecnologias"
+						aria-selected="false">Tecnologías</button>
+				</li>
+				<li class="nav-item" role="presentation">
+					<button class="nav-link" id="tab-herramientas" data-bs-toggle="pill"
+						data-bs-target="#pane-herramientas" type="button" role="tab" aria-controls="pane-herramientas"
+						aria-selected="false">Herramientas</button>
+				</li>
+			</ul>
+
+			<div class="tab-content row g-3" id="engineering-tabContent">
+				<div class="tab-pane fade show active" id="pane-estudios" role="tabpanel" aria-labelledby="tab-estudios"
+					tabindex="0">
+					<article class="card border border-4 border-black rounded-0">
+						<div class="card-body" id="estudios">
+							<h3 class="h4">Estudios</h3>
+							<p class="mb-0">
+								Actualmente curso el Grado en Ingeniería Informática en Sistemas de Información, donde
+								estoy
+								consolidando una base sólida en programación, diseño de software y gestión de sistemas.
+							</p>
+						</div>
+					</article>
+				</div>
+
+				<div class="tab-pane fade" id="pane-proyectos" role="tabpanel" aria-labelledby="tab-proyectos"
+					tabindex="0">
+					<article class="card border border-4 border-black rounded-0">
+						<div class="card-body" id="proyectos-engi">
+							<h3 class="h4">Proyectos</h3>
+							<p>
+								<span class="visually-hidden">TODO</span>
+								Mi proyecto principal en esta etapa es este portfolio personal, pensado para reunir y
+								presentar mi
+								evolución técnica y creativa.
+							</p>
+							<p class="mb-0">
+								Desde aquí enlazo mi perfil de GitHub para mostrar prácticas, ejercicios y desarrollos
+								académicos en
+								continuo crecimiento.
+							</p>
+						</div>
+					</article>
+				</div>
+
+				<div class="tab-pane fade" id="pane-tecnologias" role="tabpanel" aria-labelledby="tab-tecnologias"
+					tabindex="0">
+					<article class="card border border-4 border-black rounded-0">
+						<div class="card-body" id="tecnologias-engi">
+							<h3 class="h4">Tecnologías</h3>
+							<ul class="mb-0">
+								<li><strong>Lenguajes:</strong> C, Java, Python y PHP.</li>
+								<li><strong>Desarrollo web:</strong> HTML, CSS y JavaScript.</li>
+								<li><strong>Frameworks y librerías:</strong> Django y Keras.</li>
+							</ul>
+						</div>
+					</article>
+				</div>
+
+				<div class="tab-pane fade" id="pane-herramientas" role="tabpanel" aria-labelledby="tab-herramientas"
+					tabindex="0">
+					<article class="card border border-4 border-black rounded-0">
+						<div class="card-body" id="herramientas-engi">
+							<h3 class="h4">Herramientas</h3>
+							<ul class="mb-0">
+								<li><strong>Entornos de desarrollo:</strong> VS Code y PyCharm.</li>
+								<li><strong>Control de versiones y contenedores:</strong> Git y Docker.</li>
+								<li><strong>Productividad y sistema:</strong> Obsidian y Linux como entorno de trabajo
+									diario.</li>
+							</ul>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+		<section id="music"
+			class="container border border-black border-4 rounded-0 brut-shadow mb-3 p-3 bg-portfolio-base">
+			<div class="row align-items-center mb-3">
+				<h2 class="col-12 display-5 mb-0"><i class="bi bi-music-note-beamed fs-1"></i> Violista Profesional</h2>
+			</div>
+
+			<div id="musicCarousel" class="carousel slide d-lg-none" data-bs-ride="false">
+				<div class="carousel-indicators position-static m-0 mb-3">
+					<button type="button" data-bs-target="#musicCarousel" data-bs-slide-to="0" class="active"
+						aria-current="true" aria-label="Tarjeta 1"></button>
+					<button type="button" data-bs-target="#musicCarousel" data-bs-slide-to="1"
+						aria-label="Tarjeta 2"></button>
+					<button type="button" data-bs-target="#musicCarousel" data-bs-slide-to="2"
+						aria-label="Tarjeta 3"></button>
+					<button type="button" data-bs-target="#musicCarousel" data-bs-slide-to="3"
+						aria-label="Tarjeta 4"></button>
+				</div>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<article class="card border border-4 border-black rounded-0">
+							<div class="card-body">
+								<h3 class="h4">Formación</h3>
+								<ul class="mb-0">
+									<li>Conservatorio Superior de Música de Badajoz.</li>
+									<li>Conservatorio Profesional de Música Cristóbal de Morales.</li>
+								</ul>
+							</div>
+						</article>
+					</div>
+					<div class="carousel-item">
+						<article class="card border border-4 border-black rounded-0">
+							<div class="card-body">
+								<h3 class="h4">Repertorio</h3>
+								<p class="mb-0">
+									En mi repertorio solista cabe destacar la Suite n.º 6 para viola de J. S. Bach
+									completa y el
+									primer movimiento del concierto para viola de York Bowen.
+								</p>
+							</div>
+						</article>
+					</div>
+					<div class="carousel-item">
+						<article class="card border border-4 border-black rounded-0">
+							<div class="card-body">
+								<h3 class="h4">Experiencia orquestal</h3>
+								<ul class="mb-0">
+									<li>Orquesta de Extremadura (OEX).</li>
+									<li>Orquesta Joven de Extremadura (OJEX).</li>
+									<li>Joven Orquesta Barroca de Andalucía (JOBA).</li>
+									<li>Orquesta de Castilla y León Joven (OSCyL Joven).</li>
+									<li>BISYOC - European Intercultural Youth Orchestra.</li>
+								</ul>
+							</div>
+						</article>
+					</div>
+					<div class="carousel-item">
+						<article class="card border border-4 border-black rounded-0">
+							<div class="card-body">
+								<h3 class="h4">Instrumentos</h3>
+								<ul class="mb-0">
+									<li>Viola como instrumento principal.</li>
+									<li>Piano y guitarra como instrumentos complementarios.</li>
+								</ul>
+							</div>
+						</article>
+					</div>
+				</div>
+			</div>
+
+			<div class="row g-3 d-none d-lg-flex align-items-stretch" id="music-cards-grid">
+				<div class="col-lg-6 d-flex" id="formacion-musical">
+					<article class="card border border-4 border-black rounded-0 w-100">
+						<div class="card-body">
+							<h3 class="h4">Formación</h3>
+							<ul class="mb-0">
+								<li>Conservatorio Superior de Música de Badajoz.</li>
+								<li>Conservatorio Profesional de Música Cristóbal de Morales.</li>
+							</ul>
+						</div>
+					</article>
+				</div>
+				<div class="col-lg-6 d-flex" id="repertorio-musical">
+					<article class="card border border-4 border-black rounded-0 w-100">
+						<div class="card-body">
+							<h3 class="h4">Repertorio</h3>
+							<p class="mb-0">
+								En mi repertorio solista cabe destacar la Suite n.º 6 para viola de J. S. Bach completa
+								y el primer
+								movimiento del concierto para viola de York Bowen.
+							</p>
+						</div>
+					</article>
+				</div>
+				<div class="col-lg-6 d-flex" id="experiencia-musical">
+					<article class="card border border-4 border-black rounded-0 w-100">
+						<div class="card-body">
+							<h3 class="h4">Experiencia orquestal</h3>
+							<ul class="mb-0">
+								<li>Orquesta de Extremadura (OEX).</li>
+								<li>Orquesta Joven de Extremadura (OJEX).</li>
+								<li>Joven Orquesta Barroca de Andalucía (JOBA).</li>
+								<li>Orquesta de Castilla y León Joven (OSCyL Joven).</li>
+								<li>BISYOC - European Intercultural Youth Orchestra.</li>
+							</ul>
+						</div>
+					</article>
+				</div>
+				<div class="col-lg-6 d-flex" id="instrumentos-musical">
+					<article class="card border border-4 border-black rounded-0 w-100">
+						<div class="card-body">
+							<h3 class="h4">Instrumentos</h3>
+							<ul class="mb-0">
+								<li>Viola como instrumento principal.</li>
+								<li>Piano y guitarra como instrumentos complementarios.</li>
+							</ul>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+		<section id="about"
+			class="container border border-black border-4 rounded-0 brut-shadow mb-3 p-3 bg-portfolio-base">
+			<h2>¿Quién soy?</h2>
+			<p>
+				Soy una persona curiosa y constante, con una forma de ser marcada por la disciplina del mundo scout y
+				por
+				la experiencia de haber hecho dos veces el Camino de Santiago.
+			</p>
+			<p>
+				En mi tiempo libre disfruto de la lectura, especialmente de autores y sagas como <em>El Señor de los
+					Anillos</em>, <em>Dune</em> y Lovecraft. También me gusta el cine, con especial interés por el
+				estilo de
+				Tarantino.
+			</p>
+			<p>
+				Me encantan los videojuegos de un jugador, practico algo de natación para mantenerme activo y, por
+				supuesto,
+				nunca digo que no a un buen trozo de chocolate.
+			</p>
+		</section>
+	</main>
+	<footer class="container py-4 text-center text-portfolio-highlight small">
+		<div>Luis García Liñán · Portfolio personal</div>
+		<div class="mt-2 d-flex justify-content-center gap-3 flex-wrap">
+			<a href="mailto:luis.garcialinan@gmail.com" class="text-decoration-none text-reset">
+				<i class="bi bi-envelope-fill me-1"></i>Correo
+			</a>
+			<a href="https://www.linkedin.com/in/luis-garc%C3%ADa-li%C3%B1%C3%A1n-7a16a6334/" class="text-decoration-none text-reset" aria-label="LinkedIn (placeholder)">
+				<i class="bi bi-linkedin me-1"></i>LinkedIn
+			</a>
+			<a href="https://github.com/LuisAgRo" class="text-decoration-none text-reset" aria-label="GitHub">
+				<i class="bi bi-github me-1"></i>GitHub
+			</a>
+		</div>
+	</footer>
+</body>
+</html>
